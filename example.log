@@ -1,43 +1,24 @@
-INFO:root:connection made <socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 53140)>
-INFO:root:('127.0.0.1', 53140)
-INFO:root:data received: |200 3000|
-INFO:root:all data received: 200 3000
-INFO:root:values: ['200', '3000']
-INFO:root:n is 200 and m is 3000
-ERROR:root:m out of proper range m = 3000  n = 200
+INFO:root:connection made <socket.socket fd=272, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 58733)>
+INFO:root:('127.0.0.1', 58733)
+INFO:root:data received: |E1.0 -945 1689 -950 230 -25 1|
+INFO:root:all data received: E1.0 -945 1689 -950 230 -25 1
+INFO:root:values: ['E1.0', '-945', '1689', '-950', '230', '-25', '1']
+INFO:root:Peter test: E, number of values: 7
+INFO:root:Evaluating 1.0 for [-945, 1689, -950, 230, -25, 1]
 INFO:root:connection closed
-INFO:root:connection made <socket.socket fd=212, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 53144)>
-INFO:root:('127.0.0.1', 53144)
-INFO:root:data received: |3001 3000|
-INFO:root:all data received: 3001 3000
-INFO:root:values: ['3001', '3000']
-INFO:root:n is 3001 and m is 3000
+INFO:root:connection made <socket.socket fd=360, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 59014)>
+INFO:root:('127.0.0.1', 59014)
+INFO:root:data received: |E2.0 -945 1689 -950 230 -25 1|
+INFO:root:all data received: E2.0 -945 1689 -950 230 -25 1
+INFO:root:values: ['E2.0', '-945', '1689', '-950', '230', '-25', '1']
+INFO:root:Peter test: E, number of values: 7
+INFO:root:Evaluating 2.0 for [-945, 1689, -950, 230, -25, 1]
 INFO:root:connection closed
-INFO:root:connection made <socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 53145)>
-INFO:root:('127.0.0.1', 53145)
-INFO:root:data received: |3001 3000|
-INFO:root:all data received: 3001 3000
-INFO:root:values: ['3001', '3000']
-INFO:root:n is 3001 and m is 3000
-INFO:root:connection closed
-INFO:root:connection made <socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 53146)>
-INFO:root:('127.0.0.1', 53146)
-INFO:root:data received: |3001 3000|
-INFO:root:all data received: 3001 3000
-INFO:root:values: ['3001', '3000']
-INFO:root:n is 3001 and m is 3000
-INFO:root:connection closed
-INFO:root:connection made <socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 53147)>
-INFO:root:('127.0.0.1', 53147)
-INFO:root:data received: |3001 3000|
-INFO:root:all data received: 3001 3000
-INFO:root:values: ['3001', '3000']
-INFO:root:n is 3001 and m is 3000
-INFO:root:connection closed
-INFO:root:connection made <socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 53149)>
-INFO:root:('127.0.0.1', 53149)
-INFO:root:data received: |3021 3000|
-INFO:root:all data received: 3021 3000
-INFO:root:values: ['3021', '3000']
-INFO:root:n is 3021 and m is 3000
+INFO:root:connection made <socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 59022)>
+INFO:root:('127.0.0.1', 59022)
+INFO:root:data received: |E2.2 -945 1689 -950 230 -25 1|
+INFO:root:all data received: E2.2 -945 1689 -950 230 -25 1
+INFO:root:values: ['E2.2', '-945', '1689', '-950', '230', '-25', '1']
+INFO:root:Peter test: E, number of values: 7
+INFO:root:Evaluating 2.2 for [-945, 1689, -950, 230, -25, 1]
 INFO:root:connection closed

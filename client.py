@@ -8,10 +8,8 @@ if __name__ == "__main__":
     sock.connect(('127.0.0.1', server_port()))
     print("Connection made")
 
-    n = '3021'
-    m = '3000'
 
-    nstr = str(n) + ' ' + str(m)
+    nstr = "E2.2 -945 1689 -950 230 -25 1"
     nencoded = nstr.encode(encoding)  # this is a byte string
     sock.sendall(nencoded)
 

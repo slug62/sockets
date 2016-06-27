@@ -1,6 +1,6 @@
 from socket import socket
 import logging
-import polynomials as poly
+import polynomials
 
 __author__ = 'peter'
 
@@ -56,28 +56,21 @@ if __name__ == "__main__":
 
         values = data_string.split(' ')
         logging.info("values: {}".format(values))
-        if len(values) != 2:
-            n = 0
-            m = 0
+        logging.info("Peter test: {}, number of values: {}".format(values[0][0], len(values)))
+        if len(values) <= 1 or values[0][0] != 'E':
             logging.error("Invalid request syntax |{}|".format(data_string))
-            response = 'Invalid request syntax'
+            response = 'XInvalid request syntax, Your request either did not start with an E or S,' \
+                       ' or you had too few arguments'
         else:
-            n = values[0]
-            m = values[1]
-
-            logging.info("n is {} and m is {}".format(n, m))
-
+            if values[0][0] == 'E':
+                x = float(values[0][1:])
+                poly = [int(x) for x in values[1:]]
+                result = polynomials.evaluate(x, poly)
+                logging.info("Evaluating {} for {}".format(x, poly))
             try:
-                n = int(n)  # check this for errors!
-                m = int(m)  # check for errors
 
-                if m < 0 or n < m:
-                    response = 'm should be between 0 and n inclusive'
-                    logging.error("m out of proper range m = {}  n = {}".format(m, n))
-                else:
-                    # compute
-                    b = binom(n, m)
-                    response = str(b)
+                print("Result: ", result)
+                response = "E" + str(result)
             except:
                 response = 'invalid numeric format'
 
