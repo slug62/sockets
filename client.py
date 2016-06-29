@@ -9,7 +9,9 @@ if __name__ == "__main__":
     print("Connection made")
 
 
-    nstr = "E2.2 -945 1689 -950 230 -25 1"
+    #nstr = "E1.0 -945 1689 -950 230 -25 1"
+    #nstr = "S0 2 -945 1689 -950 230 -25 1 1e-15"
+    nstr = "E1.0 -945xx 1689 -950 230 -25 1"
     nencoded = nstr.encode(encoding)  # this is a byte string
     sock.sendall(nencoded)
 
