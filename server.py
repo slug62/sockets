@@ -27,8 +27,6 @@ if __name__ == "__main__":
         logging.info("connection made {}".format(conn))
         logging.info(str(address))
 
-        # conn is a socket that will be used to communicate with the client
-
         # get data from client (request)
         data_string = ""
         bytes = conn.recv(2048)
@@ -72,7 +70,6 @@ if __name__ == "__main__":
                 except:
                     response = 'Xinvalid numeric format'
 
-        # send result to client (response)
         conn.sendall(response.encode(encoding))
         conn.shutdown(1)  ## shutdown the sending side
         conn.close()
