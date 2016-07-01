@@ -17,11 +17,8 @@ if __name__ == "__main__":
     logging.basicConfig(filename='example.log', level=logging.INFO)
 
     # setting up a listener socket
-    sock = socket()  # this is how you create a new object,
+    sock = socket()
     sock.bind(('', server_port()))
-    #  ('', server_port())  is the socket 'address'
-    # ''  is the host, which is all possible addresses
-    # server_port() is the port number, 12345
     sock.listen(0)  # 0 backlog of connections
     ACCEPTABLE_REQUEST_TYPES = ["E", "S"]
 
@@ -71,13 +68,12 @@ if __name__ == "__main__":
                     tolerance = float(values[len(values) - 1])
                     logging.info("Bisection with a:{}, b{}, poly{}, tolerance{}".format(a, b, poly, tolerance))
                     result = polynomials.bisection(a, b, poly, tolerance)
-                    response = "E" + str(result)
+                    response = "S" + str(result)
                 except:
                     response = 'Xinvalid numeric format'
 
         # send result to client (response)
         conn.sendall(response.encode(encoding))
         conn.shutdown(1)  ## shutdown the sending side
-
         conn.close()
         logging.info("connection closed")
