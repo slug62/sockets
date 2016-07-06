@@ -62,3 +62,19 @@ INFO:root:values: ['E1.0000000000000004', '-945', '1689', '-950', '230', '-25', 
 INFO:root:Peter test: E, number of values: 7
 INFO:root:Evaluating 1.0000000000000004 for [-945, 1689, -950, 230, -25, 1]
 INFO:root:connection closed
+INFO:root:connection made <socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 50317)>
+INFO:root:('127.0.0.1', 50317)
+INFO:root:data received: |S0 2 -945 1689 -950 230 -25 1 1e-15|
+INFO:root:all data received: S0 2 -945 1689 -950 230 -25 1 1e-15
+INFO:root:values: ['S0', '2', '-945', '1689', '-950', '230', '-25', '1', '1e-15']
+INFO:root:Peter test: S, number of values: 9
+INFO:root:Bisection with a:0.0, b2.0, poly[-945.0, 1689.0, -950.0, 230.0, -25.0, 1.0], tolerance1e-15
+INFO:root:connection closed
+INFO:root:connection made <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 12321), raddr=('127.0.0.1', 50318)>
+INFO:root:('127.0.0.1', 50318)
+INFO:root:data received: |E1.0000000000000004 -945 1689 -950 230 -25 1|
+INFO:root:all data received: E1.0000000000000004 -945 1689 -950 230 -25 1
+INFO:root:values: ['E1.0000000000000004', '-945', '1689', '-950', '230', '-25', '1']
+INFO:root:Peter test: E, number of values: 7
+INFO:root:Evaluating 1.0000000000000004 for [-945.0, 1689.0, -950.0, 230.0, -25.0, 1.0]
+INFO:root:connection closed

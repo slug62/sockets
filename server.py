@@ -51,7 +51,7 @@ if __name__ == "__main__":
             if values[0][0] == ACCEPTABLE_REQUEST_TYPES[0]:
                 try:
                     x = float(values[0][1:])
-                    poly = [int(x) for x in values[1:]]
+                    poly = [float(x) for x in values[1:]]
                     result = polynomials.evaluate(x, poly)
                     logging.info("Evaluating {} for {}".format(x, poly))
                     print("Result: ", result)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
                 try:
                     a = float(values[0][1:])
                     b = float(values[1])
-                    poly = [int(x) for x in values[2:len(values) - 1]]
+                    poly = [float(x) for x in values[2:len(values) - 1]]
                     tolerance = float(values[len(values) - 1])
                     logging.info("Bisection with a:{}, b{}, poly{}, tolerance{}".format(a, b, poly, tolerance))
                     result = polynomials.bisection(a, b, poly, tolerance)
